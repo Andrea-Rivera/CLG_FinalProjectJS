@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Destinations</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkalami&family=Gentium+Plus:ital@1&family=Lobster&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital@0;1&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,40 +19,48 @@
         <nav class="nav main-nav">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="store.html">STORE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
         <h1 class="decor-bannerName decor-name-large">TRAVEL DESTINATIONS</h1>
 
     </header>
+    <section>
+        <div class="information">
+            <p>Holidays are coming and it is time to relax and find your next travel destination. You can search for a
+                country that you would like to visit and see some useful information about it. </p>
+        </div>
+    </section>
+    <section>
+        <div class="about-container">
+            <div class="search-wrapper">
+                <input type="text" id="country-inp" placeholder="Enter a country name here.">
+                <button id="search-btn">Search</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
 
     <section>
+        <hr>
+        <h1>POPULAR DESTINATIONS</h1>
+        <hr>
         <div class="index-info">
-            <h1>Popular Destinations</h1>
 
-            <div class="slider">
+            <p>If you need some ideas about your dream holiday here are some popular and wonderful
+                destinations:</p>
+
+            <div class="card-container">
                 <div class="card">
-                    <div class="img"><img src="/images/david-edelstein-N4DbvTUDikw-unsplash.jpg" alt=""></div>
+                    <div class="img"><img src="/images/jack-ward-rknrvCrfS1k-unsplash.jpg" alt=""></div>
                     <div class="content">
-                        <div class="title">Japan</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur rem mollitia
-                            sit, inventore quam accusantium officiis veritatis ea quo.</p>
-
+                        <h3 class="country">Italy</h3>
+                        <p class="description">Italy has everything.</br>The food, the wine, the history, the art and
+                            architecture, the quaint,
+                            hillside towns in Tuscany, and the underrated Dolomites…there is something here for
+                            everyone.</p>
                         <div class="btn">
-                            <button id="exploreBtn1">Explore</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img"><img src="/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg" alt=""></div>
-                    <div class="content">
-                        <div class="title">Thailand</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur rem mollitia
-                            sit, inventore quam accusantium officiis veritatis ea quo.</p>
-                        <div class="btn">
-                            <button id="exploreBtn2">Explore</button>
+                            <!--   <button id="exploreItaly">Explore</button>-->
                         </div>
                     </div>
                 </div>
@@ -55,38 +68,205 @@
                 <div class="card">
                     <div class="img"><img src="/images/ryan-XGKaRnWjv1c-unsplash.jpg" alt=""></div>
                     <div class="content">
-                        <div class="title">Greece</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur rem mollitia
-                            sit, inventore quam accusantium officiis veritatis ea quo.</p>
+                        <h3 class="country">Greece</h3>
+                        <p class="description">Besides the iconic Athens with its plethora of incredible historical
+                            sites, Greece has a delightful array of cities with some nestled among rocky hills with
+                            others overlooking the beautiful waters that surround the country.</p>
                         <div class="btn">
-                            <button id="exploreBtn3">Explore</button>
+                            <!-- <button id="exploreGreece">Explore</button>-->
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
-                    <div class="img"><img src="/images/jack-ward-rknrvCrfS1k-unsplash.jpg" alt=""></div>
+                    <div class="img"><img src="/images/david-edelstein-N4DbvTUDikw-unsplash.jpg" alt=""></div>
                     <div class="content">
-                        <div class="title">Italy</div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur rem mollitia
-                            sit, inventore quam accusantium officiis veritatis ea quo.</p>
+                        <h3 class="country">Japan</h3>
+                        <p class="description">Japan is a country rich with tradition, culture, and technology.From the
+                            heart of major
+                            destinations such as Tokyo to the smaller places to visit that tourists often skip, here's
+                            our list of the best cities in Japan.</p>
+
                         <div class="btn">
-                            <button id="exploreBtn4">Explore</button>
+                            <!--  <button id="exploreJapan">Explore</button>-->
                         </div>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="img"><img src="/images/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg" alt=""></div>
+                    <div class="content">
+                        <h3 class="country">Thailand</h3>
+                        <p class="description">While some of the best cities in Thailand are worth visiting in their own
+                            right, others act as gateways to astounding natural sights with beautiful beaches, idyllic
+                            islands and magnificent scenery lying nearby..</p>
+                        <div class="btn">
+                            <!--   <button id="exploreThailand">Explore</button>-->
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    <section>
 
-        <div class="Indexcard">
-
+    <!--<div class="card-destinations">
+        <div class="container-destinations">
+            <h2 id="destination-country"></h2>
+            <h2 id="destination-city"></h2>
+            <p id="destination-details"></p>
         </div>
+    </div>//-->
+    <section class="gallery">
+
+        <div class="main-gallery">
+
+            <h1>CITIES TO VISIT</h1>
+            <hr>
 
 
-    </section>
-    <section>
 
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('italy')"> Italy</button>
+                <button class="btn" onclick="filterSelection('greece')"> Greece</button>
+                <button class="btn" onclick="filterSelection('japan')"> Japan</button>
+                <button class="btn" onclick="filterSelection('thailand')"> Thailand</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column italy ">
+                    <div class="content">
+                        <img class="gallery" src="/images/david-kohler-VFRTXGw1VjU-unsplash.jpg" alt="italy"
+                            style="width:100%">
+                        <h4>Rome</h4>
+                        <p>The Colosseum, the Sistine Chapel, and the Vatican. The history here spans 28 centuries,
+                            making Rome one of the oldest inhabited cites in Europe (and one of the best places to visit
+                            in Italy).</p>
+                    </div>
+                </div>
+                <div class="column italy">
+                    <div class="content">
+                        <img class="gallery" src="/images/ricardo-gomez-angel-t2yh3mlISdQ-unsplash.jpg" alt="italy"
+                            style="width:100%">
+                        <h4>Venice</h4>
+
+                        <p>Wander along the canals, take a gondola ride through the city, see St. Mark’s Square, walk
+                            across the Rialto Bridge, and visit the Doges’ Palace and Saint Mark’s Basilica.</p>
+                    </div>
+                </div>
+                <div class="column italy ">
+                    <div class="content">
+                        <img class="gallery" src="/images/andrea-cevenini-Xl9klU4tejs-unsplash.jpg" alt="italy"
+                            style="width:100%">
+                        <h4>Pisa</h4>
+                        <p>The Leaning Tower of Pisa is world famous. But is it really worth the visit? We say yes, but
+                            only if you already have plans to be in the area. Pisa is worth a quick stop if you are
+                            traveling from Florence to the Cinque Terre.</p>
+                    </div>
+                </div>
+
+                <div class="column greece">
+                    <div class="content">
+                        <img class="gallery" src="/images/heidi-kaden-kYxgm42SQso-unsplash.jpg" alt="greece"
+                            style="width:100%">
+                        <h4>Santorini</h4>
+                        <p>Santorini itself is set on the site of a submerged
+                            volcano and is home to the famously breathtaking caldera which gives the island its distinct
+                            shape. Life on the island itself is pure luxury.</p>
+                    </div>
+                </div>
+                <div class="column greece">
+                    <div class="content">
+                        <img class="gallery" src="/images/constantinos-kollias-yqBvJJ8jGBQ-unsplash.jpg" alt="greece"
+                            style="width:100%">
+                        <h4>Athens</h4>
+                        <p>Inhabited for more than 3,000 years, Athens is widely known as the cradle of Western
+                            civilization and the birthplace of democracy. The city presents a confusing blend of
+                            historical and modern features.</p>
+                    </div>
+                </div>
+                <div class="column greece">
+                    <div class="content">
+                        <img class="gallery" src="/images/tobias-reich-tKPXuYDUAKg-unsplash.jpg" alt="greece"
+                            style="width:100%">
+                        <h4>Crete</h4>
+                        <p>The largest of the Greek islands, Crete is a spacious land of pleasing contrasts where
+                            landscapes range from stunning coastline to rugged mountains and rolling countryside dotted
+                            with olive trees.</p>
+                    </div>
+                </div>
+
+                <div class="column japan">
+                    <div class="content">
+                        <img class="gallery" src="/images/alexander-schimmeck-OKdKNyD1RLI-unsplash.jpg" alt="japan"
+                            style="width:100%">
+                        <h4>Tokio</h4>
+                        <p>Most visitors arriving in Japan touch down in Tokyo first. Even if your final destination is
+                            somewhere else, Tokyo deserves to be explored and enjoyed. As the most modern, most varied
+                            city in Japan, Tokyo offers a mix of old and new like nowhere else.</p>
+                    </div>
+                </div>
+                <div class="column japan">
+                    <div class="content">
+                        <img src="/images/akira-deng-t3GrQGwFX84-unsplash.jpg" alt="japan" style="width:100%">
+                        <h4>Osaka</h4>
+                        <p>Two not-to-be-missed stops in Osaka include the Open Air Museum of Old Japanese Farmhouses
+                            and Bunraku theaters, where you can see the ancient art of Japanese puppetry. Osaka Castle
+                            is another great spot to explore.</p>
+                    </div>
+                </div>
+                <div class="column japan">
+                    <div class="content">
+                        <img class="gallery" src="/images/sorasak-_UIN-pFfJ7c-unsplash.jpg" alt="japan"
+                            style="width:100%">
+                        <h4>Kyoto</h4>
+                        <p>The former ancient capital of Japan, Kyoto is known for being home to a long list of UNESCO
+                            World Heritage Sites. Must-sees include the Byodo-in Temple, featured on the 10 yen coin;
+                            the vast samurai Nijo Castle; and the iconic Kinkaku-ji Temple or "Golden Pavilion," with
+                            walls covered in gold leaf.</p>
+                    </div>
+                </div>
+
+                <div class="column thailand">
+                    <div class="content">
+                        <img class="gallery" src="/images/lucas-hemingway-N3ds3-KiOXQ-unsplash.jpg" alt="thailand"
+                            style="width:100%">
+                        <h4>Ko Phi Phi</h4>
+                        <p>Thailand’s pride and joy, Phi Phi is actually a series of islands off the coast of Phuket.
+                            Easily the first island you picture in your mind when somebody mentions Thailand, Ko Phi Phi
+                            is a Thai island celebrity – and perhaps slightly overrated, but we’ll let you decide that.
+                        </p>
+                    </div>
+                </div>
+                <div class="column thailand">
+                    <div class="content">
+                        <img class="gallery" src="/images/vitalijs-barilo-UipMW-Inpkk-unsplash.jpg" alt="thailand"
+                            style="width:100%">
+                        <h4>Nakhon Ratchasima</h4>
+                        <p>Commonly referred to as Korat, this large and lively city has expansive markets and street
+                            stalls to wander around yet little in the way of actual tourist attractions. Consequently,
+                            many visitors to the city use it as a base from which to explore sights such as the nearby
+                            Khao Yai National Park.</p>
+                    </div>
+                </div>
+                <div class="column thailand">
+                    <div class="content">
+                        <img class="gallery" src="/images/bharath-mohan-2CjOnwJCMJM-unsplash.jpg" alt="thailand"
+                            style="width:100%">
+                        <h4>Chiang Mai</h4>
+                        <p>With over 300 temples in the city; there are loads of cool places to discover! Chiang Mai is
+                            a charming and laidback city which is perfect for relaxing. Why not indulge yourself with
+                            some Thai massages or treat your taste
+                            buds with some of the wealth of delicious street food on offer?.</p>
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+
+            <!-- END MAIN -->
+        </div>
 
     </section>
 
@@ -112,7 +292,7 @@
             </ul>
         </div>
     </footer>
-    <script src="/js/about.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
