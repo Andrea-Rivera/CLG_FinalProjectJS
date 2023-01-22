@@ -34,10 +34,13 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    
 }
 
 body{
     background-color: rgb(188, 188, 225);
+
+   
 }
 
 /****HEADER*****/
@@ -80,6 +83,7 @@ p{
 .card-container{
     
     display: flex;
+    flex-wrap: wrap;
     justify-items: baseline;
     margin : 20px;
     text-align: center;
@@ -148,6 +152,7 @@ button:hover{
   
   .container-destinations {
     padding: 2px 16px;
+
   }
 /****Destinations Gallery****/
 /* Center website */
@@ -158,19 +163,21 @@ button:hover{
    
   .row {
     margin: 10px -16px;
+    
   }
   
   /* Add padding BETWEEN each column */
   .row,
   .row > .column {
-    padding: 8px;
+    padding: px;
   }
   
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
-    width: 33.33%;
+    width: 33.3%;
     display: none; /* Hide all elements by default */
+    padding: 5px;
   }
   
   /* Clear floats after rows */ 
@@ -188,7 +195,7 @@ button:hover{
   
   /* The "show" class is added to the filtered elements */
   .show {
-    display: block;
+    display: flex;
   }
 
   .gallery img{
@@ -400,4 +407,20 @@ button:hover{
 .footer-nav img {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 56.25em) {
+
+  .row{
+
+      display:flex;
+      flex-direction: column;
+      margin:10px;  
+}
+.column {
+  float: center;
+  width: 60%;
+  padding: 5px;
+}
+
 }
